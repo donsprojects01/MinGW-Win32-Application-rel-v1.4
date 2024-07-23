@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc build active file 1",
+            "command": "C:/mingw32/bin/gcc",
+            "args": [
+              "-O3",
+              "-std=c99",
+              "-D",
+              "UNICODE",
+              "-D",
+              "_UNICODE",
+              "-D",
+              "_WIN32_IE=0x0500",
+              "-D",
+              "WINVER=0x500",
+              "-Wall",
+              "-I", "./include",
+              "-c",
+              "${workspaceFolder}/src/winmain.c",
+              "-o",
+              "obj/winmain.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+       ]
+  }
